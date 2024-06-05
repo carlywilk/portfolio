@@ -1,0 +1,52 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+        padding: 2rem 5rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__logo {
+        margin: 1rem 0;
+        height: 5rem;
+
+        @include desktop {
+            margin: 0;
+        }
+    }
+
+    &__nav {
+        padding-bottom: 1rem;
+        border-top: 1px solid $basic-black;
+        border-bottom: 1px solid $basic-black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: $secondary-pink;
+        
+        @include desktop {
+            border: none;
+            justify-content: flex-end;
+            background-color: $basic-white;
+        }
+    }
+
+    &__button {
+        margin-top: 1rem;
+        @include header-button;
+
+        &--spaced {
+            margin-left: 1rem;
+        }
+    }
+}

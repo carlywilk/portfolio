@@ -1,0 +1,31 @@
+@use "./breakpoints" as *;
+@use "./colors" as *;
+@use "./typography" as *;
+
+@mixin header-button {
+    background-color: $basic-white;
+    border: 1px solid $basic-black;
+    border-radius: 0.25rem;
+    color: $basic-black;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    height: 2.25rem;
+    line-height: 1.6875rem;
+    min-width: 3.375rem;
+    padding: 0 1rem;
+    text-align: center;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    &:hover {
+        border-color: $secondary-pink;
+        box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+        color: $basic-black;
+    }
+    &:focus {
+        border-color: $basic-black;
+        outline: none;
+    }
+}
