@@ -9,7 +9,8 @@
     align-items: center;
 
     @include desktop {
-        padding: 2rem 5rem;
+        @include desktop-margins;
+        padding: 2rem 0;
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
@@ -32,12 +33,10 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        background-color: $secondary-pink;
         
         @include desktop {
             border: none;
             justify-content: flex-end;
-            background-color: $basic-white;
         }
     }
 

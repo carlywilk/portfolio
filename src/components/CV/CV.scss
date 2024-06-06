@@ -1,0 +1,97 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.cv {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+        @include desktop-margins;
+        flex-direction: row;
+    }
+
+    &__headshot {
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        
+        @include desktop {
+            width: 20%;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+            padding-left: 3rem;
+            align-items: flex-start;
+            width: 80%;
+        }
+    }
+
+    &__about {
+
+    }
+
+    &__about-title {
+        padding: 1rem 0;
+        text-align: center;
+        
+        @include desktop {
+            text-align: left;
+        }
+    }
+
+    &__about-subsections {
+        padding: 1rem 0;
+    }
+
+    &__about-subheader {
+        padding: 1rem 0;
+        display: flex;
+    }
+
+    &__skills {
+
+    }
+
+    &__experience {
+
+    }
+
+    &__education {
+
+    }
+
+    &__about-content {
+
+    }
+
+    &__content-skills {
+
+    }
+
+    &__content-experience {
+        
+    }
+
+    &__content-education {
+        
+    }
+
+    &__download {
+
+    }
+
+    &__dl-button {
+        @include body-button;
+    }
+}

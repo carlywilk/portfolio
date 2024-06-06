@@ -29,3 +29,36 @@
         outline: none;
     }
 }
+
+@mixin body-button {
+    background-color: $secondary-pink;
+    border: 1px solid $secondary-pink;
+    border-radius: 0.25rem;
+    color: $basic-black;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    height: 2.25rem;
+    line-height: 1.6875rem;
+    min-width: 3.375rem;
+    padding: 0 1rem;
+    text-align: center;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    &:hover {
+        border-color: $basic-black;
+        box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+        color: $basic-black;
+    }
+    &:focus {
+        border-color: $basic-black;
+        outline: none;
+    }
+}
+
+@mixin desktop-margins {
+    margin: 0 auto;
+    max-width: 75rem;
+}

@@ -16,6 +16,9 @@ export function Header() {
                 <Link to="/projects">
                     <button className="header__button header__button--spaced">Projects</button>
                 </Link>
+                <Link to="/contact">
+                    <button className="header__button header__button--spaced">Contact</button>
+                </Link>
             </nav>
         </section>
     )
