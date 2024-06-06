@@ -7,10 +7,18 @@ import "./HomePage.scss"
 
 export function HomePage() {
     return (
-        <>
-            <CV />
-            <Projects />
-            <Contact />
-        </>
+        <section className="home">
+            <section className="home__cv">
+                <CV />
+            </section>
+
+            <section className="home__projects">
+                <Projects />
+            </section>
+
+            <section className="home__contact">
+                <Contact />
+            </section>
+        </section>
     );
 }

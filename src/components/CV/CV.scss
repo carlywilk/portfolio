@@ -48,6 +48,12 @@
 
     &__about-subsections {
         padding: 1rem 0;
+
+        @include desktop {
+            padding: 2rem 0 2.5rem;
+            width: 50%;
+            align-self: flex-start;
+        }
     }
 
     &__about-subheader {
@@ -75,7 +81,7 @@
         padding: 0 1rem;
 
         @include desktop {
-            padding: 0 1.25rem;
+            padding: 0;
         }
     }
 

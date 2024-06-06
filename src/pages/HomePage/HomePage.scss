@@ -1,0 +1,29 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.home {
+
+    &__cv {
+
+        @include desktop {
+            padding: 5rem 0 15rem;
+        }
+    }
+
+    &__projects {
+        background-color: $secondary-peach;
+
+        @include desktop {
+            padding: 8rem 0 8rem;
+        }
+    }
+
+    &__contact {
+
+        @include desktop {
+
+        }
+    }
+}
