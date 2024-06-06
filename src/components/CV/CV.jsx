@@ -19,7 +19,7 @@ export function CV() {
             <section className="cv__main">
                 <div className="cv__about">
                     <h3 className="cv__about-title">About Me</h3>
-                    <p className="cv__about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minima exercitationem alias delectus, voluptatum distinctio sapiente quis saepe eveniet voluptatem, excepturi veritatis dignissimos tempore ea natus accusantium aliquam blanditiis cum.</p>
+                    <p className="cv__about-me-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius minima exercitationem alias delectus, voluptatum distinctio sapiente quis saepe eveniet voluptatem, excepturi veritatis dignissimos tempore ea natus accusantium aliquam blanditiis cum.</p>
                 </div>
                 <div className="cv__about-subsections">
                     <div className="cv__about-subheader">

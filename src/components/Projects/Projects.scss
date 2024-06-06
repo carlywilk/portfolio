@@ -1,0 +1,68 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.projects {
+    margin: 2rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+        @include desktop-margins;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        align-items: flex-start;
+    }
+
+    &__title {
+        padding-bottom: 0.5rem;
+    }
+
+    &__container-capstone {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    &__container-ws {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    &__icon {
+        width: 10rem;
+        height: 10rem;
+        background-color: grey;
+    }
+
+    &__subtitle {
+        padding: 0.5rem 0;
+    }
+
+    &__github {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &__deployed-link {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
