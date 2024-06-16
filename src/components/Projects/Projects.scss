@@ -44,24 +44,22 @@
         flex-direction: column;
         align-items: center;
         background-color: $basic-white;
-        opacity: 0; /* initially hidden */
-        transform: translateY(-50px); /* Start off-screen */
+        opacity: 0;
+        transform: translateY(-50px);
         transition: opacity 1s ease-out, transform 1s ease-out;
+        box-shadow: 3px 3px 0px 3px rgba(255,173,244,0.5);
 
         @include desktop {
             margin: 0;
             border: 10px solid $basic-white;
             width: 32rem;
             height: 21rem;
-            // flex-direction: row;
             justify-content: space-between;
-            // align-self: flex-start;
-            // width: 100%;
             box-shadow: 10px 10px 0px 3px rgba(255,173,244,0.5);
         }
 
         &:hover {
-            transform: translateY(-10px); /* Move card upwards on hover */
+            transform: translateY(-10px);
         }
     }
 
@@ -125,16 +123,16 @@
 
 .fade-in-down {
     opacity: 1;
-    transform: translateY(0); /* Move to normal position */
+    transform: translateY(0);
 }
 
 @keyframes fade-in-down {
     0% {
         opacity: 0;
-        transform: translateY(-50px); /* Start off-screen */
+        transform: translateY(-50px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* Move to normal position */
+        transform: translateY(0);
     }
 }
