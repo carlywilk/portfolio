@@ -42,6 +42,9 @@
         flex-direction: column;
         align-items: center;
         background-color: $basic-white;
+        opacity: 0; /* initially hidden */
+        transform: translateY(-50px); /* Start off-screen */
+        transition: opacity 1s ease-out, transform 1s ease-out;
 
         @include desktop {
             margin: 0;
@@ -55,6 +58,10 @@
             box-shadow: 10px 10px 0px 3px rgba(255,255,255,0.2)
 
             ;
+        }
+
+        &:hover {
+            transform: translateY(-10px); /* Move card upwards on hover */
         }
     }
 
@@ -97,5 +104,21 @@
         @include desktop {
             margin-left: 1rem;
         }
+    }
+}
+
+.fade-in-down {
+    opacity: 1;
+    transform: translateY(0); /* Move to normal position */
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); /* Start off-screen */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move to normal position */
     }
 }
