@@ -38,7 +38,7 @@ export function CV() {
                     </div>
                     <div className="cv__about-content">
                         {selectedTab === "skills" && (
-                            <div className="cv__content-skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe sunt dolor unde ut, ea fugit, expedita magni officiis quaerat itaque debitis quo, maxime exercitationem est adipisci quis doloribus illo.</div>
+                            <div className="cv__content-skills">HTML, CSS, <br></br>Sass, JavaScript, React.js, MySQL, Node.js, Express.js, Git, API Data Handling</div>
                         )}
                         {selectedTab === "experience" && (
                             <div className="cv__content-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus tenetur modi iusto repellat sed libero quod veniam amet natus sequi quisquam eveniet assumenda numquam velit excepturi, rerum rem reprehenderit?</div>

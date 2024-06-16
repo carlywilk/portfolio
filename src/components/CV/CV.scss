@@ -15,12 +15,13 @@
     }
 
     &__headshot {
-        border: 5px solid $basic-white;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-        width: 15rem;
-        height: 15rem;
-        object-fit: cover;
+        // border: 5px solid $secondary-pink;
+        // border-top-left-radius: 50%;
+        // border-top-right-radius: 50%;
+        width: 25rem;
+        // height: 20rem;
+        object-fit: contain;
+        box-shadow: 10px 10px 0px 3px rgba(255,173,244,0.5);
         
         @include desktop {
             width: 20%;
@@ -45,6 +46,8 @@
         color: $basic-white;
         
         @include desktop {
+            font-size: 2.25rem;
+            text-transform: uppercase;
             text-align: left;
         }
     }

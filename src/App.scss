@@ -6,7 +6,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  // background-color: $secondary-peach;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -15,4 +14,8 @@ body {
   @include desktop {
     @include desktop-background;
   }
+}
+
+a {
+  width: fit-content;
 }

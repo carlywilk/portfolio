@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 import githubLogo from "../../assets/icons/github-mark.svg";
 import linkIcon from "../../assets/icons/link-icon.svg";
@@ -10,22 +10,36 @@ import wsIpScreenshot from "../../assets/images/ws-industry-project.png";
 import "./Projects.scss";
 
 export function Projects() {
-    const [isCardVisible, setIsCardVisisble] = useState(false);
-    const { ref, inView } = useInView({
-        threshold: 0.65,
-    });
 
     useEffect(() => {
-        if (inView) {
-            setIsCardVisisble(true);
-        }
-    }, [inView]);
+        const cards = document.querySelectorAll(".projects__card");
+
+        const fadeInDown = (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in-down");
+                }
+            });
+        };
+
+        const cardObserver = new IntersectionObserver(fadeInDown, {
+            threshold: 0.5,
+        });
+
+        cards.forEach((card) => {
+            cardObserver.observe(card);
+        });
+
+        return () => {
+            cardObserver.disconnect();
+        };
+    });
 
     return (
         <section className="projects">
             <div className="projects__cards-container">
 
-                <div className={`projects__card ${isCardVisible ? "fade-in-down" : ""}`} ref={ref}>
+                <div className="projects__card">
                     <img className="projects__icon" src={capstoneScreenshot} alt="" />
 
                     <div className="projects__information">
@@ -44,7 +58,7 @@ export function Projects() {
 
                 </div>
 
-                <div className={`projects__card ${isCardVisible ? "fade-in-down" : ""}`} ref={ref}>
+                <div className="projects__card">
                     <img className="projects__icon" src={wsIpScreenshot} alt="" />
 
                     <div className="projects__information">
