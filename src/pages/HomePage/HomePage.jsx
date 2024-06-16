@@ -17,7 +17,7 @@ export function HomePage() {
             </section>
 
             <section className="home__projects">
-                {/* <Projects /> */}
+                <Projects />
             </section>
 
             <section className="home__contact">
