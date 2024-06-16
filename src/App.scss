@@ -10,7 +10,8 @@
 }
 
 body {
-  
+  @include mobile-background;
+
   @include desktop {
     @include desktop-background;
   }

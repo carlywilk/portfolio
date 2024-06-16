@@ -4,27 +4,31 @@
 @use "../../styles/partials/typography" as *;
 
 .cv {
-    margin: 1rem;
+    margin: 0 1rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @include desktop {
         @include desktop-margins;
+        padding-bottom: 0;
         flex-direction: row;
     }
 
     &__headshot {
+        margin: 5rem 0;
         // border: 5px solid $secondary-pink;
         // border-top-left-radius: 50%;
         // border-top-right-radius: 50%;
-        width: 25rem;
+        width: 50%;
         // height: 20rem;
         object-fit: contain;
         box-shadow: 10px 10px 0px 3px rgba(255,173,244,0.5);
         
         @include desktop {
-            width: 20%;
+            margin: 0;
+            width: 25rem;
         }
     }
 
@@ -32,16 +36,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         @include desktop {
             padding-left: 3rem;
             align-items: flex-start;
             width: 80%;
+            text-align: left;
         }
     }
 
     &__about-title {
         padding: 1rem 0;
+        font-size: 1.75rem;
+        text-transform: uppercase;
         text-align: center;
         color: $basic-white;
         
@@ -52,41 +60,14 @@
         }
     }
 
-    &__about-subsections {
-        padding: 1rem 0;
+    &__about-me-content {
+        padding: 0 0 2rem 0;
+        font-size: 1rem;
         color: $basic-white;
 
         @include desktop {
-            padding: 2rem 0 2.5rem;
-            width: 50%;
-            align-self: flex-start;
+            font-size: 1.25rem;
         }
-    }
-
-    &__about-subheader {
-        padding: 1rem 0;
-        display: flex;
-        justify-content: space-between;
-        color: $basic-white;
-
-        > div {
-            cursor: pointer;
-            padding: 0.5rem 1rem;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            &:hover {
-                background-color: $basic-white;
-                color: $basic-black;
-            }
-
-            @include desktop {
-                margin: 0 0.25rem;
-            }
-        }
-    }
-
-    &__about-me-content {
-        color: $basic-white;
     }
 
     &__about-content {
@@ -98,13 +79,58 @@
         }
     }
 
-    &__download {
+    &__subsections-container {
+        display: flex;
+        flex-direction: column;
+
         @include desktop {
-            align-self: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 
-    &__dl-button {
-        @include body-button;
+    &__about-subsection {
+
+        @include desktop {
+            padding: 2.5rem 0 0;
+        }
     }
+
+    &__subsection-title {
+        padding: 0 0 0.25rem 0;
+        font-size: 1.25rem;
+        color: $basic-white;
+        text-transform: uppercase;
+
+        @include desktop {
+            padding: 0 0 0.5rem 0;
+            font-size: 1.25rem;
+        }
+    }
+
+    &__subsection-content {
+        padding-bottom: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: $basic-white;
+
+        @include desktop {
+            padding-bottom: 0;
+            width: 90%;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__subsection-skills-content {
+        padding-bottom: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: $basic-white;
+
+        @include desktop {
+            padding-bottom: 0;
+            font-size: 1.1rem;
+        }
+    }
+
 }

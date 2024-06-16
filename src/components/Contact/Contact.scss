@@ -24,21 +24,34 @@
     }
 
     &__freelance {
+        margin-bottom: 2.75rem;
+        padding: 1rem 0;
+        border-top: 2px solid $secondary-pink;
+        border-bottom: 2px solid $secondary-pink;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: $basic-white;
 
         @include desktop {
+            margin-bottom: 0;
             padding: 1rem 0 2.75rem;
+            border-top: none;
+            border-bottom: none;
             font-size: 2.25rem;
-            text-transform: uppercase;
             text-decoration: underline;
             text-underline-offset: 1rem;
             text-decoration-color: $secondary-pink;
-            color: $basic-white;
         }
     }
 
     &__freelance-content {
-        font-size: 1.25rem;
+        font-size: 1rem;
         color: $basic-white;
+
+        @include desktop {
+            font-size: 1.25rem;
+        }
     }
 
     &__freelance-line-one {
@@ -49,9 +62,20 @@
     }
 
     &__freelance-line-two {
+        padding: 1rem 0 0 0;
 
         @include desktop {
             padding: 0 0 2rem 0;
+        }
+    }
+
+    &__content-container {
+        margin: 0 1rem;
+        text-align: center;
+
+        @include desktop {
+            margin: 0;
+            text-align: left;
         }
     }
 
@@ -61,27 +85,41 @@
     }
 
     &__email {
-        border-bottom: 3px solid transparent;
-        font-size: 1.25rem;
+        margin: 2rem 0 0 0;
+        width: 100%;
+        font-size: 1rem;
         color: $secondary-pink;
         text-decoration: none;
 
         @include desktop {
             margin: 0 0 2rem 0;
+            border-bottom: 3px solid transparent;
+            font-size: 1.25rem;
         }
 
         &:hover {
-            border-bottom: 3px solid $secondary-pink;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: $secondary-pink;
+            text-underline-offset: 0.45rem;
+
+            @include desktop {
+                border-bottom: 3px solid $secondary-pink;
+                text-decoration: none;
+            }
         }
     }
 
     &__linkedin {
-        font-size: 1.15rem;
+        padding: 1rem 0 0.5rem 0;
+        width: 100%;
+        font-size: 1rem;
         color: $basic-white;
         text-decoration: none;
 
         @include desktop {
             padding: 0 0 0.5rem 0;
+            font-size: 1.15rem;
         }
 
         &:hover {
@@ -90,9 +128,16 @@
     }
 
     &__github {
-        font-size: 1.15rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        font-size: 1rem;
         color: $basic-white;
         text-decoration: none;
+
+        @include desktop {
+            margin-bottom: 0;
+            font-size: 1.15rem;
+        }
 
         &:hover {
             color: $secondary-pink;
@@ -100,8 +145,11 @@
     }
 
     &__logo {
+        margin-bottom: 2rem;
+        width: 3.5rem;
 
         @include desktop {
+            margin-bottom: 0;
             width: 5rem;
             align-self: flex-end;
         }

@@ -3,7 +3,6 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 
-
 .header {
     display: flex;
     flex-direction: column;
@@ -11,6 +10,11 @@
     transition: background-color 0.3s ease;
     width: 100%;
     z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: transparent;
+    transform: translateX(-50%);
 
     @include desktop {
         padding: 2rem 0;
@@ -18,39 +22,49 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        position: fixed;
-        top: 0;
-        left: 50%;
-        background-color: transparent;
-        transform: translateX(-50%);
-    }
-
-    &__logo {
-        margin: 1rem 0;
-        height: 5rem;
-
-        @include desktop {
-            margin: 0;
-        }
+        
     }
 
     &__nav {
-        padding-bottom: 1rem;
-        border-top: 1px solid $basic-black;
-        border-bottom: 1px solid $basic-black;
+        margin: 1rem;
+        // padding-bottom: 1rem;
+        // border-top: 1px solid $basic-black;
+        // border-bottom: 1px solid $basic-black;
         width: 100%;
         display: flex;
         justify-content: center;
         
         @include desktop {
+            margin: 0;
+            padding-bottom: 1rem;
             border: none;
             justify-content: space-evenly;
         }
     }
 
     &__button {
-        margin-top: 1rem;
-        @include header-button;
+        // margin-top: 1rem;
+        background: none;
+        border: none;
+        color: $basic-black;
+        cursor: pointer;
+        font-size: 0.94rem;
+        font-weight: 600;
+        height: 2.25rem;
+        line-height: 1.6875rem;
+        text-transform: uppercase;
+        // min-width: 3.375rem;
+        // padding: 0 1rem;
+        text-align: center;
+        transition: 0.3s;
+        &:hover {
+            background-color: $basic-black;
+            color: $basic-white;
+        }
+
+        @include desktop {
+            @include header-button;
+        }
 
         &--spaced {
             margin-left: 1rem;

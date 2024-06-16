@@ -18,6 +18,7 @@
         background-color: $basic-black;
 
         @include desktop {
+            margin: 0 auto;
             padding: 5rem 0 10rem;
         }
     }

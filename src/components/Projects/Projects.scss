@@ -4,15 +4,18 @@
 @use "../../styles/partials/typography" as *;
 
 .projects {
-    margin: 2rem 1rem 1rem;
+    margin: 0 1rem 0 1rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @include desktop {
         @include desktop-margins;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin: 3rem auto;
+        padding-bottom: 0;
+        // margin-top: 3rem;
+        // margin-bottom: 3rem;
         width: 100%;
         align-items: flex-start;
     }
@@ -28,6 +31,7 @@
 
     &__cards-container {
         display: flex;
+        flex-direction: column;
 
         @include desktop {
             width: 100%;
@@ -64,21 +68,25 @@
     }
 
     &__information {
+        padding: 0.5rem;
+        width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
         @include desktop {
             padding: 1.5rem 1rem;
-            width: 100%;
-            justify-content: space-between;
         }
     }
 
     &__icon {
-        // width: 10rem;
-        border: 2px solid $basic-black;
-        height: 15rem;
-        background-color: grey;
+    width: 100%;
+    border: 2px solid $basic-black;
+
+        @include desktop {
+            height: 15rem;
+        }
     }
 
     &__links-container {
@@ -87,20 +95,32 @@
     }
 
     &__subtitle {
-        padding: 0.5rem 0;
+        font-size: 1rem;
+
+        @include desktop {
+            padding: 0.5rem 0;
+        }
     }
 
     &__github {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
+
+        @include desktop {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 
     &__deployed-link {
-        width: 2.5rem;
-        height: 2.5rem;
+        margin-left: 0.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
 
         @include desktop {
             margin-left: 1rem;
+            width: 2.5rem;
+            height: 2.5rem;
         }
     }
 }
