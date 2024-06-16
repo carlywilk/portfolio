@@ -16,7 +16,7 @@ export function Contact() {
                         </div>
                         <div className="contact__links">
                             <a className="contact__email" href={`mailto:carly.wilk.dev@gmail.com`}>carly.wilk.dev@gmail.com</a>
-                            <a className="contact__linkedin" href="https:/www.linkedin.com/in/carly-wilk" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a className="contact__linkedin" href="https://www.linkedin.com/in/carly-wilk" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                             <a className="contact__github" href="https://github.com/carlywilk" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </div>
                     </div>
