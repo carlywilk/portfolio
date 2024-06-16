@@ -47,7 +47,6 @@
         opacity: 0;
         transform: translateY(-50px);
         transition: opacity 1s ease-out, transform 1s ease-out;
-        box-shadow: 3px 3px 0px 3px rgba(255,173,244,0.5);
 
         @include desktop {
             margin: 0;
