@@ -27,9 +27,6 @@
 
     &__nav {
         margin: 1rem;
-        // padding-bottom: 1rem;
-        // border-top: 1px solid $basic-black;
-        // border-bottom: 1px solid $basic-black;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -43,7 +40,6 @@
     }
 
     &__button {
-        // margin-top: 1rem;
         background: none;
         border: none;
         color: $basic-black;
@@ -53,8 +49,6 @@
         height: 2.25rem;
         line-height: 1.6875rem;
         text-transform: uppercase;
-        // min-width: 3.375rem;
-        // padding: 0 1rem;
         text-align: center;
         transition: 0.3s;
         &:hover {

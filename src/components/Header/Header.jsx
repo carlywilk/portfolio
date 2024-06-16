@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { animateScroll as scroll, scroller } from "react-scroll";
-
-import cwLogo from "../../assets/logo/cw-logo.svg";
 
 import "./Header.scss";
 
@@ -53,15 +50,9 @@ export function Header() {
     return (
         <section className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="header__nav">
-                {/* <Link to="/"> */}
-                    <button className="header__button" onClick={scrollToTop}>> Home</button>
-                {/* </Link> */}
-                {/* <Link to="/projects"> */}
-                    <button className="header__button header__button--spaced" onClick={scrollToProjects}>> Projects</button>
-                {/* </Link> */}
-                {/* <Link to="/contact"> */}
-                    <button className="header__button header__button--spaced" onClick={scrollToContact}>> Contact</button>
-                {/* </Link> */}
+                <button className="header__button" onClick={scrollToTop}>> Home</button>
+                <button className="header__button header__button--spaced" onClick={scrollToProjects}>> Projects</button>
+                <button className="header__button header__button--spaced" onClick={scrollToContact}>> Contact</button>
             </nav>
         </section>
     )
