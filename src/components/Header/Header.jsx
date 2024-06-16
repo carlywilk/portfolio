@@ -9,7 +9,9 @@ export function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            if (scrollTop > window.innerHeight) {
+            const triggerHeight = 750;
+
+            if (scrollTop > triggerHeight) {
                 setscrolled(true);
             } else {
                 setscrolled(false);
@@ -21,6 +23,14 @@ export function Header() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    const scrollToCv = () => {
+        scroller.scrollTo("cv", {
+            duration: 800,
+            delay: 0,
+            smooth: "easeInOutQuart",
+        });
+    };
 
     const scrollToProjects = () => {
         scroller.scrollTo("projects", {
@@ -39,18 +49,10 @@ export function Header() {
         });
     };
 
-    const scrollToTop = () => {
-        scroll.scrollToTop({
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOutQuart",
-        });
-    };
-
     return (
         <section className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="header__nav">
-                <button className="header__button" onClick={scrollToTop}>> Home</button>
+                <button className="header__button" onClick={scrollToCv}>> About</button>
                 <button className="header__button header__button--spaced" onClick={scrollToProjects}>> Projects</button>
                 <button className="header__button header__button--spaced" onClick={scrollToContact}>> Contact</button>
             </nav>

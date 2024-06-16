@@ -36,7 +36,7 @@ export function Projects() {
 
     return (
         <section className="projects">
-            <h2 className="projects__title">Projects</h2>
+            <h2 className="projects__title">> Projects</h2>
             <div className="projects__cards-container">
                 <div className="projects__card">
                     <img className="projects__icon" src={capstoneScreenshot} alt="" />

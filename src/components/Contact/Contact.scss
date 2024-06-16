@@ -24,6 +24,7 @@
     }
 
     &__freelance {
+        margin: 0 1rem 2.75rem;
         margin-bottom: 2.75rem;
         padding: 1rem 0;
         border-top: 2px solid $secondary-pink;
@@ -34,7 +35,7 @@
         color: $basic-white;
 
         @include desktop {
-            margin-bottom: 0;
+            margin: 0;
             padding: 1rem 0 2.75rem;
             border-top: none;
             border-bottom: none;

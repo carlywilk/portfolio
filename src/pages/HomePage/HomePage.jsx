@@ -3,6 +3,7 @@ import { Contact } from "../../components/Contact/Contact.jsx";
 import { CV } from "../../components/CV/CV.jsx";
 import { Landing } from "../../components/Landing/Landing.jsx";
 import { Projects } from "../../components/Projects/Projects.jsx";
+import { ScrollToTop } from "../../components/ScrollToTop/ScrollToTop.jsx";
 
 import "./HomePage.scss"
 
@@ -23,6 +24,8 @@ export function HomePage() {
             <section id="contact" className="home__contact">
                 <Contact />
             </section>
+            
+            <ScrollToTop />
         </section>
     );
 }
