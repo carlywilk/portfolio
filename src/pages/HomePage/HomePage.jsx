@@ -9,18 +9,18 @@ import "./HomePage.scss"
 export function HomePage() {
     return (
         <section className="home">
-            <section className="home__landing">
+            <section id="landing" className="home__landing">
                 <Landing />
             </section>
-            <section className="home__cv">
+            <section id="cv" className="home__cv">
                 <CV />
             </section>
 
-            <section className="home__projects">
+            <section id="projects" className="home__projects">
                 <Projects />
             </section>
 
-            <section className="home__contact">
+            <section id="contact" className="home__contact">
                 <Contact />
             </section>
         </section>

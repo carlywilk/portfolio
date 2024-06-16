@@ -19,11 +19,18 @@
     }
 
     &__title {
-        padding-bottom: 0.5rem;
+        padding: 1rem 0;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        text-align: center;
         color: $basic-white;
-
+        
         @include desktop {
-            padding-bottom: 3rem;
+            padding: 0 0 3rem 0;
+            width: 100%;
+            font-size: 2.25rem;
+            text-transform: uppercase;
+            text-align: center;
         }
     }
 
