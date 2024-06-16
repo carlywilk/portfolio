@@ -102,11 +102,6 @@
             text-decoration-thickness: 3px;
             text-decoration-color: $secondary-pink;
             text-underline-offset: 0.45rem;
-
-            @include desktop {
-                border-bottom: 3px solid $secondary-pink;
-                text-decoration: none;
-            }
         }
     }
 
