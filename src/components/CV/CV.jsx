@@ -48,9 +48,9 @@ export function CV() {
                         )}
                     </div>
                 </div>
-                <div className="cv__download">
+                {/* <div className="cv__download">
                     <button className="cv__dl-button">Download CV</button>
-                </div>
+                </div> */}
             </section>
         </section>
     );

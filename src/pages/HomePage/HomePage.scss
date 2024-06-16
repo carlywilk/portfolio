@@ -6,9 +6,11 @@
 .home {
 
     &__cv {
+        background-color: $basic-black;
 
         @include desktop {
-            padding: 5rem 0 15rem;
+            padding-top: 15rem;
+            height: 100vh;
         }
     }
 

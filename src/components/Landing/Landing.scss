@@ -1,0 +1,41 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop {
+        height: 100vh;
+        
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        @include desktop {
+            padding: 10rem 0;
+        }
+    }
+
+    &__title {
+
+        @include desktop {
+            @include desktop-title;
+        }
+    }
+
+    &__subtitle {
+
+        @include desktop {
+            @include desktop-subtitle;
+        }
+    }
+}

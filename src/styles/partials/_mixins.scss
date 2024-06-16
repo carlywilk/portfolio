@@ -3,62 +3,68 @@
 @use "./typography" as *;
 
 @mixin header-button {
-    background-color: $basic-white;
-    border: 1px solid $basic-black;
-    border-radius: 0.25rem;
+    background: none;
+    border: none;
     color: $basic-black;
     cursor: pointer;
-    font-family: arial,sans-serif;
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     height: 2.25rem;
     line-height: 1.6875rem;
+    text-transform: uppercase;
     min-width: 3.375rem;
     padding: 0 1rem;
     text-align: center;
-    user-select: none;
-    touch-action: manipulation;
-    white-space: pre;
+    transition: 0.3s;
     &:hover {
-        border-color: $secondary-pink;
-        box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
-        color: $basic-black;
-    }
-    &:focus {
-        border-color: $basic-black;
-        outline: none;
+        background-color: $basic-black;
+        color: $basic-white;
     }
 }
 
 @mixin body-button {
-    background-color: $secondary-pink;
-    border: 1px solid $secondary-pink;
-    border-radius: 0.25rem;
-    color: $basic-black;
+    background: none;
+    border: none;
+    color: $basic-white;
     cursor: pointer;
-    font-family: arial,sans-serif;
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     height: 2.25rem;
     line-height: 1.6875rem;
+    text-transform: uppercase;
     min-width: 3.375rem;
     padding: 0 1rem;
     text-align: center;
-    user-select: none;
-    touch-action: manipulation;
-    white-space: pre;
+    transition: 0.3s;
     &:hover {
-        border-color: $basic-black;
-        box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+        background-color: $basic-white;
         color: $basic-black;
-    }
-    &:focus {
-        border-color: $basic-black;
-        outline: none;
     }
 }
 
 @mixin desktop-margins {
     margin: 0 auto;
     max-width: 75rem;
+}
+
+@mixin mobile-background {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image:
+        linear-gradient(to right, $background-gray 1px, transparent 1px),
+        linear-gradient(to bottom, $background-gray 1px, $basic-white 1px);
+    background-size: 2rem 2rem;
+    background-position: center center;
+}
+
+@mixin desktop-background {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image:
+        linear-gradient(to right, $background-gray 1px, transparent 1px),
+        linear-gradient(to bottom, $background-gray 1px, $basic-white 1px);
+    background-size: 3rem 3rem;
+    background-position: center center;
 }
