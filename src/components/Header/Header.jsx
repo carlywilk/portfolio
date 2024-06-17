@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import { animateScroll as scroller } from "react-scroll";
 
 import "./Header.scss";
 
 export function Header() {
-    const [scrolled, setscrolled] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -12,9 +11,9 @@ export function Header() {
             const triggerHeight = 750;
 
             if (scrollTop > triggerHeight) {
-                setscrolled(true);
+                setScrolled(true);
             } else {
-                setscrolled(false);
+                setScrolled(false);
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -24,37 +23,23 @@ export function Header() {
         };
     }, []);
 
-    const scrollToCv = () => {
-        scroller.scrollTo("cv", {
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOutQuart",
-        });
-    };
+    const scrollTo = (id) => {
+        const element = document.getElementById(id);
 
-    const scrollToProjects = () => {
-        scroller.scrollTo("projects", {
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOutQuart",
-            offset: -200,
-        });
-    };
-
-    const scrollToContact = () => {
-        scroller.scrollTo("contact", {
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOutQuart",
-        });
+        if (element) {
+            window.scrollTo({
+                behavior: "smooth",
+                top: element.offsetTop - 50,
+            });
+        }
     };
 
     return (
         <section className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="header__nav">
-                <button className="header__button" onClick={scrollToCv}>{`>`} About</button>
-                <button className="header__button header__button--spaced" onClick={scrollToProjects}>{`>`} Projects</button>
-                <button className="header__button header__button--spaced" onClick={scrollToContact}>{`>`} Contact</button>
+                <button className="header__button" onClick={() => scrollTo("cv")}>{`>`} About</button>
+                <button className="header__button header__button--spaced" onClick={() => scrollTo("projects")}>{`>`} Projects</button>
+                <button className="header__button header__button--spaced" onClick={() => scrollTo("contact")}>{`>`} Contact</button>
             </nav>
         </section>
     )

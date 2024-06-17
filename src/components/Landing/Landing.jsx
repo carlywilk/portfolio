@@ -1,4 +1,3 @@
-
 import { ScrollDown } from "../ScrollDown/ScrollDown.jsx";
 
 import "./Landing.scss";

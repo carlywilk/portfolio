@@ -1,10 +1,8 @@
-
 import cwHeadshot from "../../assets/images/carly-wilk-headshot.jpeg";
 
 import "./CV.scss";
 
 export function CV() {
-
     return (
         <section className="cv">
             <img className="cv__headshot" src={cwHeadshot} alt="" />

@@ -1,4 +1,3 @@
-
 import cwLogo from "../../assets/logo/cw-logo.svg";
 
 import "./Contact.scss";

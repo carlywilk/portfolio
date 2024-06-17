@@ -4,13 +4,13 @@
 @use "../../styles/partials/typography" as *;
 
 .home {
+    overflow: auto;
 
     &__cv {
         background-color: $basic-black;
 
         @include desktop {
-            padding: 15rem 0 7rem;
-            // height: 100vh;
+            padding: 5rem 0 7rem;
         }
     }
 
