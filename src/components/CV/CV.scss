@@ -43,7 +43,7 @@
     }
 
     &__about-title {
-        padding: 1rem 0;
+        padding: 1rem 0 2rem;
         font-size: 1.75rem;
         text-transform: uppercase;
         text-align: center;
@@ -115,7 +115,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         font-size: 1rem;
         line-height: 1.25rem;
@@ -161,7 +161,7 @@
     }
 
     &__subsection-skills-content {
-        margin: 0.5rem 0.5rem 0 0;
+        margin: 0.5rem 0.5rem 0;
         padding: 0.5rem 0.5rem;
         border-top-right-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
