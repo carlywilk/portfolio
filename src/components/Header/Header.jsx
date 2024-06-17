@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { animateScroll as scroll, scroller } from "react-scroll";
+import { animateScroll as scroller } from "react-scroll";
 
 import "./Header.scss";
 
@@ -52,9 +52,9 @@ export function Header() {
     return (
         <section className={`header ${scrolled ? "scrolled" : ""}`}>
             <nav className="header__nav">
-                <button className="header__button" onClick={scrollToCv}>> About</button>
-                <button className="header__button header__button--spaced" onClick={scrollToProjects}>> Projects</button>
-                <button className="header__button header__button--spaced" onClick={scrollToContact}>> Contact</button>
+                <button className="header__button" onClick={scrollToCv}>{`>`} About</button>
+                <button className="header__button header__button--spaced" onClick={scrollToProjects}>{`>`} Projects</button>
+                <button className="header__button header__button--spaced" onClick={scrollToContact}>{`>`} Contact</button>
             </nav>
         </section>
     )
