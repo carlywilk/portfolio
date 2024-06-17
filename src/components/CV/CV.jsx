@@ -10,12 +10,23 @@ export function CV() {
             <img className="cv__headshot" src={cwHeadshot} alt="" />
             <section className="cv__main">
                 <div className="cv__about">
-                    <h2 className="cv__about-title">> About Me</h2>
+                    <h2 className="cv__about-title">{`<`} About Me {`/>`}</h2>
                     <p className="cv__about-me-content">With studies focused primarily in biological sciences, my experiences have led me to equity seeking and intersectional perspectives that foster connections of care and consent. Currently I am seeking ways to leverage my background in biology to aid with my transition into the tech industry as a software engineer.</p>
                 </div>
                 <div className="cv__about-subsection">
                     <div className="cv__subsection-title">Skills</div>
-                    <p className="cv__subsection-skills-content">HTML, CSS, Sass, JavaScript, React.js, Node.js, Express.js, Git, MySQL, API Data Handling</p>
+                    <div className="cv__skills-list">
+                        <p className="cv__subsection-skills-content">HTML</p>
+                        <p className="cv__subsection-skills-content">CSS</p>
+                        <p className="cv__subsection-skills-content">Sass</p>
+                        <p className="cv__subsection-skills-content">JavaScript</p>
+                        <p className="cv__subsection-skills-content">React.js</p>
+                        <p className="cv__subsection-skills-content">Node.js</p>
+                        <p className="cv__subsection-skills-content">Express.js</p>
+                        <p className="cv__subsection-skills-content">Git</p>
+                        <p className="cv__subsection-skills-content">MySQL</p>
+                        <p className="cv__subsection-skills-content">API Data Handling</p>
+                    </div>
                 </div>
                 <div className="cv__subsections-container">
                     <div className="cv__about-subsection">

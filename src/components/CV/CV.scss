@@ -57,12 +57,12 @@
     }
 
     &__about-me-content {
-        padding: 0 0 2rem 0;
+        padding: 0 0 1rem 0;
         font-size: 1rem;
         color: $basic-white;
 
         @include desktop {
-            padding: 0;
+            padding: 0 0 0.5rem 0;
             font-size: 1.25rem;
         }
     }
@@ -90,13 +90,13 @@
     &__about-subsection {
 
         @include desktop {
-            padding: 2.5rem 0 0;
+            padding: 2rem 0 0;
             width: 90%;
         }
     }
 
     &__subsection-title {
-        padding: 0 0 0.5rem 0;
+        padding: 1.5rem 0 0.5rem 0;
         font-size: 1.25rem;
         color: $basic-white;
         text-transform: uppercase;
@@ -107,6 +107,22 @@
         @include desktop {
             padding: 0 0 0.75rem 0;
             font-size: 1.25rem;
+        }
+    }
+
+    &__skills-list {
+        padding-bottom: 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: $basic-white;
+
+        @include desktop {
+            justify-content: flex-start;
         }
     }
 
@@ -145,13 +161,20 @@
     }
 
     &__subsection-skills-content {
-        padding-bottom: 1.5rem;
+        margin: 0.5rem 0.5rem 0 0;
+        padding: 0.5rem 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        width: fit-content;
+        height: fit-content;
+        background-color: rgba(255,173,244,0.5);
         font-size: 1rem;
         line-height: 1.25rem;
         color: $basic-white;
 
         @include desktop {
-            padding-bottom: 0;
+            margin: 0.5rem 0.75rem 0.5rem 0;
+            padding: 0.5rem 0.75rem;
             font-size: 1.1rem;
         }
     }

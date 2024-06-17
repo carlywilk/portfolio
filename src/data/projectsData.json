@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Queer Health Hub",
+        "image": "carly-wilk-capstone-landingpage-desktop-overlay.png",
+        "github": "https://github.com/carlywilk/capstone.git",
+        "deployed": "https://queerhealthhub.netlify.app/"
+    },
+    {
+        "title": "WealthJourney Planner",
+        "image": "ws-industry-project.png",
+        "github": "https://github.com/carlywilk/ws-industry-project.git",
+        "deployed": null
+    }
+]

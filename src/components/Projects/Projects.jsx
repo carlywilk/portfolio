@@ -1,5 +1,7 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
+import projectsData from "../../data/projectsData.json";
 
 import githubLogo from "../../assets/icons/github-mark.svg";
 import linkIcon from "../../assets/icons/link-icon.svg";
@@ -9,6 +11,7 @@ import wsIpScreenshot from "../../assets/images/ws-industry-project.png";
 import "./Projects.scss";
 
 export function Projects() {
+    const [flippedCard, setFlippedCard] = useState(null);
 
     useEffect(() => {
         const cards = document.querySelectorAll(".projects__card");
@@ -32,11 +35,19 @@ export function Projects() {
         return () => {
             cardObserver.disconnect();
         };
-    });
+    }, []);
+
+    const handleCardClick = (index) => {
+        if (flippedCard === index) {
+            setFlippedCard(null);
+        } else {
+            setFlippedCard(index);
+        }
+    };
 
     return (
         <section className="projects">
-            <h2 className="projects__title">> Projects</h2>
+            <h2 className="projects__title">{`<`} Projects {`/>`}</h2>
             <div className="projects__cards-container">
                 <div className="projects__card">
                     <img className="projects__icon" src={capstoneScreenshot} alt="" />

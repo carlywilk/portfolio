@@ -8,7 +8,7 @@ export function Contact() {
         <section className="contact">
             <div className="contact__main">
                 <div className="contact__find-me">
-                    <h2 className="contact__freelance">> Available for freelance opportunities</h2>
+                    <h2 className="contact__freelance">{`<`} Available for freelance opportunities {`/>`}</h2>
                     <div className="contact__content-container">
                         <div className="contact__freelance-content">
                             <p className="contact__freelance-line-one">Do you need a website built or help with an existing project?</p>
