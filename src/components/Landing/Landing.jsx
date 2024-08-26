@@ -9,7 +9,7 @@ export function Landing() {
                 <h1 className="landing__title">Carly Wilk</h1>
                 <div className="landing__subtitle-content">
                     <h2 className="landing__subtitle--hidden">{`<`} </h2>
-                    <h2 className="landing__subtitle">Full Stack Software Engineer</h2>
+                    <h2 className="landing__subtitle">Full Stack Software Developer</h2>
                     <h2 className="landing__subtitle--hidden"> {`/>`}</h2>
                 </div>
             </div>

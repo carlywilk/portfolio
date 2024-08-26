@@ -9,7 +9,7 @@ export function CV() {
             <section className="cv__main">
                 <div className="cv__about">
                     <h2 className="cv__about-title">{`<`}About Me{`/>`}</h2>
-                    <p className="cv__about-me-content">With studies focused primarily in biological sciences, my experiences have led me to equity seeking and intersectional perspectives that foster connections of care and consent. Currently I am seeking ways to leverage my background in biology to aid with my transition into the tech industry as a software engineer.</p>
+                    <p className="cv__about-me-content">With studies focused primarily in biological sciences, my experiences have led me to equity seeking and intersectional perspectives that foster connections of care and consent. Currently I am seeking ways to leverage my background in biology to aid with my transition into the tech industry as a software developer.</p>
                 </div>
                 <div className="cv__about-subsection">
                     <div className="cv__subsection-title">Skills</div>
