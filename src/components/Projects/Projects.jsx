@@ -57,7 +57,7 @@ export function Projects() {
                     <div className="projects__information">
                         <h3 className="projects__subtitle">WealthJourney Planner</h3>
                         <div className="project__links-container">
-                            <Link to="https://github.com/carlywilk/ws-industry-project.git">
+                            <Link to="https://github.com/ranakibrahim/industry-ws-sln.git">
                                 <img className="projects__github" src={githubLogo} alt="cat with tail on black background" />
                             </Link>
                         </div>
