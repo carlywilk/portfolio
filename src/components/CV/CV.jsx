@@ -9,7 +9,8 @@ export function CV() {
             <section className="cv__main">
                 <div className="cv__about">
                     <h2 className="cv__about-title">{`<`}About Me{`/>`}</h2>
-                    <p className="cv__about-me-content">With studies focused primarily in biological sciences, my experiences have led me to equity seeking and intersectional perspectives that foster connections of care and consent. Currently I am seeking ways to leverage my background in biology to aid with my transition into the tech industry as a software developer.</p>
+                    {/* <p className="cv__about-me-content">With studies focused primarily in biological sciences, my experiences have led me to equity seeking and intersectional perspectives that foster connections of care and consent. Currently I am seeking ways to leverage my background in biology to aid with my transition into the tech industry as a software developer.</p> */}
+                    <p className="cv__about-me-content">As a software developer with a background in biology, I bring a unique blend of technical expertise and a strong commitment to fostering inclusive, accessible solutions. My experiences in both web development and executive assistance have shaped my ability to think critically, pay attention to detail, and quickly adapt to new challenges. My background in biology and sociology also informs my approach to problem-solving, bringing a keen eye for data management and thoughtful, intersectional perspectives on user needs.</p>
                 </div>
                 <div className="cv__about-subsection">
                     <div className="cv__subsection-title">Skills</div>
@@ -24,6 +25,11 @@ export function CV() {
                         <p className="cv__subsection-skills-content">Git</p>
                         <p className="cv__subsection-skills-content">MySQL</p>
                         <p className="cv__subsection-skills-content">API Data Handling</p>
+                        <p className="cv__subsection-skills-content">Figma</p>
+                        <p className="cv__subsection-skills-content">Canva</p>
+                        <p className="cv__subsection-skills-content">Miro</p>
+                        <p className="cv__subsection-skills-content">Data Management</p>
+                        <p className="cv__subsection-skills-content">Technical Writing</p>
                     </div>
                 </div>
                 <div className="cv__subsections-container">
@@ -38,10 +44,10 @@ export function CV() {
                     </div>
                     <div className="cv__about-subsection">
                         <div className="cv__subsection-title">Experience</div>
-                        <h3 className="cv__subsection-content-subheader">Executive Assistant | Virtual Gurus</h3>
-                        <p className="cv__subsection-content">Remote | Jan 2022 - present</p>
-                        <h3 className="cv__subsection-content-subheader--padded">Sales Associate | Brock's</h3>
-                        <p className="cv__subsection-content">Port Perry, ON | Jul 2021 - Dec 2021</p>
+                        <h3 className="cv__subsection-content-subheader">Software Developer | Freelance</h3>
+                        <p className="cv__subsection-content">Remote, Sep 2024 - present</p>
+                        <h3 className="cv__subsection-content-subheader--padded">Executive Assistant | Virtual Gurus</h3>
+                        <p className="cv__subsection-content">Remote, Jan 2022 - present</p>
                         <h3 className="cv__subsection-content-subheader--padded">Student Partner | Carleton University</h3>
                         <p className="cv__subsection-content">Remote, Jul 2020 - Aug 2020</p>
                     </div>
