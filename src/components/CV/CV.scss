@@ -14,6 +14,7 @@
         @include desktop-margins;
         padding-bottom: 0;
         flex-direction: row;
+        align-items: flex-start;
     }
 
     &__headshot {
@@ -23,7 +24,7 @@
         box-shadow: 10px 10px 0px 3px rgba(255,173,244,0.5);
         
         @include desktop {
-            margin: 0;
+            margin: 1.5rem 0 0 0;
             width: 25rem;
         }
     }
@@ -59,11 +60,13 @@
     &__about-me-content {
         padding: 0 0 1rem 0;
         font-size: 1rem;
+        line-height: 1.4rem;
         color: $basic-white;
 
         @include desktop {
             padding: 0 0 0.5rem 0;
             font-size: 1.25rem;
+            line-height: 1.75rem;
         }
     }
 
