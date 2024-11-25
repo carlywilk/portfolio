@@ -47,11 +47,11 @@ export function CV() {
                     <div className="cv__about-subsection">
                         <div className="cv__subsection-title">Experience</div>
                         <h3 className="cv__subsection-content-subheader">Software Developer | Freelance</h3>
-                        <p className="cv__subsection-content">Remote, Sep 2024 - present</p>
+                        <p className="cv__subsection-content">Sep 2024 - present</p>
                         <h3 className="cv__subsection-content-subheader--padded">Executive Assistant | Virtual Gurus</h3>
-                        <p className="cv__subsection-content">Remote, Jan 2022 - present</p>
+                        <p className="cv__subsection-content">Jan 2022 - present</p>
                         <h3 className="cv__subsection-content-subheader--padded">Student Partner | Carleton University</h3>
-                        <p className="cv__subsection-content">Remote, Jul 2020 - Aug 2020</p>
+                        <p className="cv__subsection-content">Jul 2020 - Aug 2020</p>
                     </div>
                 </div>
             </section>
