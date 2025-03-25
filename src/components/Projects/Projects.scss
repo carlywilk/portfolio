@@ -42,6 +42,7 @@
             width: 100%;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
 
@@ -67,6 +68,12 @@
         &:hover {
             transform: translateY(-10px);
         }
+
+        &--spaced {
+            @include desktop {
+                margin-top: 3rem;
+            }
+        }
     }
 
     &__information {
@@ -85,6 +92,7 @@
     &__icon {
     width: 100%;
     border: 2px solid $basic-black;
+    object-fit: cover;
 
         @include desktop {
             height: 15rem;

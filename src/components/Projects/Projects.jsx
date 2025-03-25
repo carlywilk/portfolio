@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import githubLogo from "../../assets/icons/github-mark.svg";
 import linkIcon from "../../assets/icons/link-icon.svg";
+import karachiShopScreenshot from "../../assets/images/carly-wilk-karachi-shop-screenshot.png";
 import capstoneScreenshot from "../../assets/images/carly-wilk-capstone-landingpage-desktop-overlay.png";
 import wsIpScreenshot from "../../assets/images/ws-industry-project.png";
 
@@ -39,11 +40,25 @@ export function Projects() {
             <h2 className="projects__title">{`<`}Projects{`/>`}</h2>
             <div className="projects__cards-container">
                 <div className="projects__card">
+                    <img className="projects__icon" src={karachiShopScreenshot} alt="" />
+                    <div className="projects__information">
+                        <h3 className="projects__subtitle">Karachi Shop Toronto</h3>
+                        <div className="project__links-container">
+                            <Link to="https://github.com/carlywilk/karachi-shop" target="_blank" rel="noopener noreferrer">
+                                <img className="projects__github" src={githubLogo} alt="cat with tail on black background" />
+                            </Link>
+                            <Link to="https://karachishoptoronto.com/" target="_blank" rel="noopener noreferrer">
+                                <img className="projects__deployed-link" src={linkIcon} alt="" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="projects__card">
                     <img className="projects__icon" src={capstoneScreenshot} alt="" />
                     <div className="projects__information">
                         <h3 className="projects__subtitle">Queer Health Hub</h3>
                         <div className="project__links-container">
-                            <Link to="https://github.com/carlywilk/capstone.git">
+                            <Link to="https://github.com/carlywilk/capstone.git" target="_blank" rel="noopener noreferrer">
                                 <img className="projects__github" src={githubLogo} alt="cat with tail on black background" />
                             </Link>
                             <Link to="https://queerhealthhub.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -52,12 +67,12 @@ export function Projects() {
                         </div>
                     </div>
                 </div>
-                <div className="projects__card">
+                <div className="projects__card projects__card--spaced">
                     <img className="projects__icon" src={wsIpScreenshot} alt="" />
                     <div className="projects__information">
                         <h3 className="projects__subtitle">WealthJourney Planner</h3>
                         <div className="project__links-container">
-                            <Link to="https://github.com/ranakibrahim/industry-ws-sln.git">
+                            <Link to="https://github.com/ranakibrahim/industry-ws-sln.git" target="_blank" rel="noopener noreferrer">
                                 <img className="projects__github" src={githubLogo} alt="cat with tail on black background" />
                             </Link>
                         </div>
