@@ -51,7 +51,7 @@ export function CV() {
                         <h3 className="cv__subsection-content-subheader--padded">Executive Assistant | Virtual Gurus</h3>
                         <p className="cv__subsection-content">Jan 2022 - present</p>
                         <h3 className="cv__subsection-content-subheader--padded">Student Partner | Carleton University</h3>
-                        <p className="cv__subsection-content">Jul 2020 - Aug 2020</p>
+                        <p className="cv__subsection-content">Summer 2020</p>
                     </div>
                 </div>
             </section>
