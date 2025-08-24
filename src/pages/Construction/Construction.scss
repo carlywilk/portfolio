@@ -1,0 +1,23 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__title {
+        
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: $basic-black;
+
+        @include desktop {
+            font-size: 2.25rem;
+        }
+    }
+}
